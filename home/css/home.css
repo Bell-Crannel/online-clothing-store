@@ -110,23 +110,149 @@ legend {
   font-family: "Satoshi";
   font-weight: 400;
   font-style: normal;
-  src: local("Satoshi"), url("./../fonts/Satoshi-Regular/Satoshi-Regular.woff2") format("woff2"), url("./../fonts/Satoshi-Regular/Satoshi-Regular.woff") format("woff"), url("./../fonts/Satoshi-Regular/Satoshi-Regular.ttf") format("truetype"), url("./../fonts/Satoshi-Regular/Satoshi-Regular.eot") format("eot");
+  src: local("Satoshi"), url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.woff2") format("woff2"), url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.woff") format("woff"), url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.ttf") format("truetype"), url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.eot") format("opentype");
 }
 @font-face {
   font-family: "Satoshi";
   font-weight: 700;
   font-style: normal;
-  src: local("Satoshi"), url(./../fonts/Satoshi-Bold/Satoshi-Bold.woff2) format("woff2"), url(./../fonts/Satoshi-Bold/Satoshi-Bold.woff) format("woff"), url(./../fonts/Satoshi-Bold/Satoshi-Bold.ttf) format("truetype"), url(./../fonts/Satoshi-Bold/Satoshi-Bold.eot) format("eot");
+  src: local("Satoshi"), url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.woff2") format("woff2"), url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.woff") format("woff"), url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.ttf") format("truetype"), url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.eot") format("opentype");
 }
 @font-face {
   font-family: "Satoshi";
   font-weight: 500;
   font-style: normal;
-  src: local("Satoshi"), url(./../fonts/Satoshi-Medium/Satoshi-Medium.woff2) format("woff2"), url(./../fonts/Satoshi-Medium/Satoshi-Medium.woff) format("woff"), url(./../fonts/Satoshi-Medium/Satoshi-Medium.ttf) format("truetype"), url(./../fonts/Satoshi-Medium/Satoshi-Medium.eot) format("eot");
+  src: local("Satoshi"), url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.woff2") format("woff2"), url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.woff") format("woff"), url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.ttf") format("truetype"), url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.eot") format("opentype");
 }
 @font-face {
   font-family: "Integral CF";
   font-weight: 700;
   font-style: normal;
-  src: local("Integral CF"), url(./../fonts/Integral-CF/Fontspring-DEMO-integralcf-bold.woff) format("woff2"), url(./../fonts/Integral-CF/Fontspring-DEMO-integralcf-bold.otf) format("otf");
+  src: local("Integral CF"), url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.woff2") format("woff2"), url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.woff") format("woff"), url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.ttf") format("truetype"), url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.eot") format("opentype");
+}
+.content {
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.header__nav {
+  width: 90vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.logo {
+  font-family: "Integral CF";
+  font-size: 32px;
+}
+
+.header__links {
+  display: grid;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-size: 16px;
+  width: 321px;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-items: center;
+}
+.header__links a {
+  color: #000000;
+  white-space: nowrap;
+}
+
+.header__search {
+  background-color: #f0eeed;
+  font-family: "Satoshi";
+  font-weight: 400;
+  width: 547px;
+  height: 48px;
+  border-radius: 62px;
+  padding: 12px 16px;
+}
+
+.shop-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  width: 62px;
+  align-content: center;
+  justify-self: end;
+}
+
+.preview {
+  width: 100%;
+  height: 660px;
+  background-color: #f2f0f1;
+}
+
+.preview__content {
+  width: 90vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  overflow: hidden;
+}
+
+.preview__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__description__info {
+  margin-bottom: 48px;
+}
+.preview__description__info > :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.preview__description__title {
+  font-family: "Integral CF";
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.preview__description__text {
+  font-family: "Satoshi";
+  font-weight: 400;
+}
+
+.default-btn {
+  font-family: "Satoshi";
+  font-weight: 500;
+  background-color: #000000;
+  color: white;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+}
+
+.preview__description__statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+
+.preview__description__statistics_item dt {
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-size: 40px;
+}
+.preview__description__statistics_item dd {
+  font-family: "Satoshi";
+  font-family: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=home.css.map */

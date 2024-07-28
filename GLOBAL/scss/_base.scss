@@ -3,30 +3,40 @@
   font-weight: 400;
   font-style: normal;
   src: local("Satoshi"),
-    url("./../fonts/Satoshi-Regular/Satoshi-Regular.woff2") format("woff2"),
-    url("./../fonts/Satoshi-Regular/Satoshi-Regular.woff") format("woff"),
-    url("./../fonts/Satoshi-Regular/Satoshi-Regular.ttf") format("truetype"),
-    url("./../fonts/Satoshi-Regular/Satoshi-Regular.eot") format("eot");
+    url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.woff2")
+      format("woff2"),
+    url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.woff")
+      format("woff"),
+    url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.ttf")
+      format("truetype"),
+    url("./../../GLOBAL/fonts/Satoshi-Regular/Satoshi-Regular.eot")
+      format("opentype");
 }
+
 @font-face {
   font-family: "Satoshi";
   font-weight: 700;
   font-style: normal;
   src: local("Satoshi"),
-    url(./../fonts/Satoshi-Bold/Satoshi-Bold.woff2) format("woff2"),
-    url(./../fonts/Satoshi-Bold/Satoshi-Bold.woff) format("woff"),
-    url(./../fonts/Satoshi-Bold/Satoshi-Bold.ttf) format("truetype"),
-    url(./../fonts/Satoshi-Bold/Satoshi-Bold.eot) format("eot");
+    url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.woff2") format("woff2"),
+    url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.woff") format("woff"),
+    url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.ttf") format("truetype"),
+    url("./../../GLOBAL/fonts/Satoshi-Bold/Satoshi-Bold.eot") format("opentype");
 }
+
 @font-face {
   font-family: "Satoshi";
   font-weight: 500;
   font-style: normal;
   src: local("Satoshi"),
-    url(./../fonts/Satoshi-Medium/Satoshi-Medium.woff2) format("woff2"),
-    url(./../fonts/Satoshi-Medium/Satoshi-Medium.woff) format("woff"),
-    url(./../fonts/Satoshi-Medium/Satoshi-Medium.ttf) format("truetype"),
-    url(./../fonts/Satoshi-Medium/Satoshi-Medium.eot) format("eot");
+    url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.woff")
+      format("woff"),
+    url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.ttf")
+      format("truetype"),
+    url("./../../GLOBAL/fonts/Satoshi-Medium/Satoshi-Medium.eot")
+      format("opentype");
 }
 
 @font-face {
@@ -34,8 +44,15 @@
   font-weight: 700;
   font-style: normal;
   src: local("Integral CF"),
-    url(./../fonts/Integral-CF/Fontspring-DEMO-integralcf-bold.woff)
+    url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.woff2")
       format("woff2"),
-    url(./../fonts/Integral-CF/Fontspring-DEMO-integralcf-bold.otf)
-      format("otf");
+    url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.woff") format("woff"),
+    url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.ttf")
+      format("truetype"),
+    url("./../../GLOBAL/fonts/Integral-CF/IntegralCF-Bold.eot")
+      format("opentype");
+}
+
+.content {
+  margin: 0 auto;
 }
